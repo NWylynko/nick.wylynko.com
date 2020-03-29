@@ -1,0 +1,23 @@
+{
+  "hosting": {
+    "site": "nick-wylynko",
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "public/**",
+      "src/**",
+      "package-lock.json",
+      "package.json",
+      "README.md"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+
+    ]
+  }
+}

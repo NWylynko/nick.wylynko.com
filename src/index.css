@@ -1,0 +1,97 @@
+body {
+  background: linear-gradient(#eb7558, #e1496a);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(#eb7558, #e1496a);
+}
+
+html {
+  background: #e1496a;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  --main-txt-color: #f1c83c;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.content {
+  width: '50%';
+}
+
+/* @media (min-width: 600px) {
+  .content {
+    width: '95%';
+  }
+} */
+
+.wylynko {
+  color: var(--main-txt-color);
+}
+
+@media print {
+  .App {
+    --main-txt-color: #ff8585;
+    background: #fff;
+    color: black;
+    font-size: 19px;
+  }
+}
+
+.tile {
+  text-align: start;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+.align {
+  display: inline-block;
+}
+
+.maincolour {
+  color: var(--main-txt-color);
+  /* text-decoration: none; */
+}
+
+li {
+  text-align: start;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+h3 {
+  text-align: start; 
+  color: var(--main-txt-color);
+}
+
+hr {
+  height: 2px;
+  width: 80%;
+  border-width:0 ;
+  color: var(--main-txt-color);
+  background-color: var(--main-txt-color);
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
