@@ -18,13 +18,13 @@ jobs:
       with:
         node-version: '13.x'
 
-    - name: install dependencies
-      run: |
-        npm install
+    uses: borales/actions-yarn@v2.0.0
+      with:
+        cmd: install
 
-    - name: build website
-      run: |
-        npm run build
+    - uses: borales/actions-yarn@v2.0.0
+      with:
+        cmd: build
 
     - uses: w9jds/firebase-action@master
       with:

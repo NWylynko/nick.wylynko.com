@@ -13,14 +13,6 @@ export default function App() {
   const [mobile, set_mobile] = useState(null)
   const [printing, set_printing] = useState(false)
 
-  // const [skills_ul, set_skills_ul] = useState(<ul style={{ flexDirection: "row" }}></ul>)
-  // const skills = 
-  //   ["HTML", "CSS", "Javascript", "PHP", "Python", "Nodejs", 
-  //   "SQL", "NoSQL", "C#", "Reactjs", "React Native (expo)", 
-  //   "Shell", "Docker", "GitHub", "Swift", "Nginx", "Photoshop", 
-  //   "Blender", "Word", "Excel", "PowerPoint", "firebase", 
-  //   "gcloud", "websocket", "openVPN"]
-
   useEffect(() => {
 
     window.addEventListener('resize', updateWindowDimensions);
