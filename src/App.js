@@ -8,7 +8,7 @@ export default function App() {
   const [width, set_width] = useState(window.innerWidth)
   const [height, set_height] = useState(window.innerHeight)
 
-  const [displayWidth, set_displayWidth] = useState(0)
+  const [displayWidth, set_displayWidth] = useState(0);
   const [TextSize, set_TextSize] = useState(50)
   const [mobile, set_mobile] = useState(null)
   const [printing, set_printing] = useState(false)
