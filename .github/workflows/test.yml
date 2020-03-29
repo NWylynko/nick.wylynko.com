@@ -1,0 +1,27 @@
+name: test
+
+on:
+  push:
+    branches:    
+      - '*' 
+
+jobs:
+  test:
+    
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@master
+
+      - uses: actions/setup-node@master
+        with:
+          node-version: '13.x'
+
+      - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: install
+
+      - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: test
