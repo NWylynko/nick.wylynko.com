@@ -1,7 +1,11 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import {StoreContext} from '../store';
 import { UpperCaseFirstLetter } from '../utils/UpperCaseFirstLetter';
 import { font } from "./font";
-export function Links({ links, printing }) {
+
+export function Links({ links }) {
+  const {printing} = useContext(StoreContext);
+
   if (links) {
     let render = <div children={[]}></div>;
     let keyN = 0;

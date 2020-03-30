@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
+import {StoreContext} from './store';
 
 import { Hr } from './components/Hr';
 import { Projects } from './components/Projects';
+import { Link } from './components/Link';
 
 export default function App() {
 
@@ -9,8 +11,8 @@ export default function App() {
   const [height, set_height] = useState(window.innerHeight)
 
   const [TextSize, set_TextSize] = useState(50)
-  const [mobile, set_mobile] = useState(null)
-  const [printing, set_printing] = useState(false)
+
+  const {setMobile, printing, setPrinting} = useContext(StoreContext);
 
   useEffect(() => {
 
@@ -19,56 +21,37 @@ export default function App() {
     let mobile = height >= width
     let displayWidth = mobile ? width : width * 0.5
 
-    set_mobile(mobile)
+    setMobile(mobile)
     set_TextSize(printing ? 100 : displayWidth / 7)
 
     return function cleanup() {
       window.removeEventListener('resize', updateWindowDimensions);
     };
 
-  }, [width, height, printing]);
+  }, [width, height, printing, setMobile]);
 
   function updateWindowDimensions() {
     set_width(window.innerWidth)
     set_height(window.innerHeight)
   }
 
-  window.onbeforeprint = () => {
-    set_printing(true)
-  }
-
-  window.onafterprint = () => {
-    set_printing(false)
-  }
-
-  function Link() {
-    if (printing) {
-      return (
-        <div>
-          <p className="maincolour" style={{ marginBottom: 5, marginTop: 5 }}>Website [nick.wylynko.com]</p>
-          <p className="maincolour" style={{ marginBottom: 5, marginTop: 5 }}>Email [nick1014375@gmail.com]</p>
-          <p className="maincolour" style={{ marginBottom: 5, marginTop: 5 }}>LinkedIn [nick.wylynko.com/linkedin]</p>
-          <p className="maincolour" style={{ marginBottom: 5, marginTop: 5 }}>Github [nick.wylynko.com/github]</p>
-        </div>
-      )
-    } else {
-      return (
-        <div>
-          <a className="maincolour" href="mailto:nick1014375@gmail.com">Email ·</a>
-          <a className="maincolour" href="https://linkedin.com/in/nick-wylynko-17a202193/"> LinkedIn </a>
-          <a className="maincolour" href="https://github.com/nwylynko">· Github</a>
-        </div>
-      )
+  useEffect(() => {
+    window.onbeforeprint = () => {
+      setPrinting(true)
     }
-  }
+  
+    window.onafterprint = () => {
+      setPrinting(false)
+    }
+  }, [setPrinting])
 
   return (
     <div className="App">
       <div className="content">
 
         <div className="align" >
-          <h1 className="align" style={{ margin: 0, fontSize: TextSize }}>Nick&nbsp;</h1>
-          <h1 className="align wylynko" style={{ margin: 0, fontSize: TextSize, }}>Wylynko</h1>
+          <h1 className="align name" style={{ margin: 0, fontSize: TextSize }}>Nick&nbsp;</h1>
+          <h1 className="align name wylynko" style={{ margin: 0, fontSize: TextSize, }}>Wylynko</h1>
         </div>
         <h6 style={{ margin: 3 }}>Perth, WA, Australia · <a href="tel:+61434901870" style={{ color: 'white' }}>0434 901 870</a></h6>
         <Link />
@@ -99,7 +82,7 @@ export default function App() {
             Shell, Docker, GitHub, Photoshop, Blender, Word, Excel,
             PowerPoint, firebase, gcloud</li>
         </ul>
-        <Hr printing={printing} />
+        <Hr />
         <ul>
           <li>Took apart and built Computers and different electronics</li>
           <li>Working with Networking, Servers, Websites</li>
@@ -107,9 +90,10 @@ export default function App() {
           <li>highly productive in both a team and individual environment</li>
         </ul>
         <h3 style={printing ? { marginTop: 50 } : null}>Projects: </h3>
-        <Projects printing={printing} mobile={mobile} />
+        <Projects />
         {/* <h3 style={printing ? {marginTop: 50} : null}>Certificates: </h3> */}
       </div>
     </div>
   );
 }
+
