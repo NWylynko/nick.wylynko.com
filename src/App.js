@@ -8,7 +8,6 @@ export default function App() {
   const [width, set_width] = useState(window.innerWidth)
   const [height, set_height] = useState(window.innerHeight)
 
-  const [displayWidth, set_displayWidth] = useState(0);
   const [TextSize, set_TextSize] = useState(50)
   const [mobile, set_mobile] = useState(null)
   const [printing, set_printing] = useState(false)
@@ -18,10 +17,9 @@ export default function App() {
     window.addEventListener('resize', updateWindowDimensions);
 
     let mobile = height >= width
-    let displayWidth = mobile ? width * 0.95 : width * 0.7
+    let displayWidth = mobile ? width : width * 0.5
 
     set_mobile(mobile)
-    set_displayWidth(displayWidth)
     set_TextSize(printing ? 100 : displayWidth / 7)
 
     return function cleanup() {
@@ -66,7 +64,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <div className="content" style={printing ? null : { width: displayWidth }}>
+      <div className="content">
 
         <div className="align" >
           <h1 className="align" style={{ margin: 0, fontSize: TextSize }}>Nick&nbsp;</h1>
@@ -98,7 +96,7 @@ export default function App() {
         <h3>Skills: </h3>
         <ul style={{ flexDirection: "row" }}>
           <li>HTML, CSS, JS, Python, Nodejs, SQL, NoSQL, Reactjs, React Native (expo),
-            Shell, Docker, GitHub, Nginx, Photoshop, Blender, Word, Excel,
+            Shell, Docker, GitHub, Photoshop, Blender, Word, Excel,
             PowerPoint, firebase, gcloud</li>
         </ul>
         <Hr printing={printing} />

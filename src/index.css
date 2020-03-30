@@ -31,14 +31,22 @@ code {
 }
 
 .content {
-  width: '50%';
+  width: 50vw;
 }
 
-/* @media (min-width: 600px) {
+
+
+@media (max-width: 1024px) {
   .content {
-    width: '95%';
+    width: 75vw;
   }
-} */
+}
+
+@media (max-width: 600px) {
+  .content {
+    width: 95vw;
+  }
+}
 
 .wylynko {
   color: var(--main-txt-color);
