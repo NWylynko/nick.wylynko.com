@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
-import {StoreContext} from './store';
+import { StoreContext } from './store';
 
 import { Hr } from './components/Hr';
 import { Projects } from './components/Projects';
@@ -12,7 +12,7 @@ export default function App() {
 
   const [TextSize, set_TextSize] = useState(50)
 
-  const {setMobile, printing, setPrinting} = useContext(StoreContext);
+  const { setMobile, printing, setPrinting } = useContext(StoreContext);
 
   useEffect(() => {
 
@@ -39,7 +39,7 @@ export default function App() {
     window.onbeforeprint = () => {
       setPrinting(true)
     }
-  
+
     window.onafterprint = () => {
       setPrinting(false)
     }
@@ -48,49 +48,52 @@ export default function App() {
   return (
     <div className="App">
       <div className="content">
-
-        <div className="align" >
-          <h1 className="align name" style={{ margin: 0, fontSize: TextSize }}>Nick&nbsp;</h1>
-          <h1 className="align name wylynko" style={{ margin: 0, fontSize: TextSize, }}>Wylynko</h1>
-        </div>
-        <h6 style={{ margin: 3 }}>Perth, WA, Australia · <a href="tel:+61434901870" style={{ color: 'white' }}>0434 901 870</a></h6>
-        <Link />
-        <h5 style={{ margin: 5 }}>
-          Objective: To gain further knowledge and experience
-          in Software and Hardware in this rapidly developing world,
-          by gettings a part time or remote position at your business.
+        <div>
+          <div className="align" >
+            <h1 className="align name" style={{ margin: 0, fontSize: TextSize }}>Nick&nbsp;</h1>
+            <h1 className="align name wylynko" style={{ margin: 0, fontSize: TextSize, }}>Wylynko</h1>
+          </div>
+          <h6 style={{ margin: 3 }}>Perth, WA, Australia · <a href="tel:+61434901870" style={{ color: 'white' }}>0434 901 870</a></h6>
+          <Link />
+          <h5 style={{ margin: 5 }}>
+            Objective: To gain further knowledge and experience
+            in Software and Hardware in this rapidly developing world,
+            by gettings a part time or remote position at your business.
         </h5>
-        <h3>Education: </h3>
-        <p style={{ margin: 2 }}>
-          Day boy at Christ Church Grammar School since year 4,
-          currently in year 11 (Queenslea), graduate in 2021 cohort.
+          <h3>Education: </h3>
+          <p style={{ margin: 2 }}>
+            Day boy at Christ Church Grammar School since year 4,
+            currently in year 11 (Queenslea), graduate in 2021 cohort.
         </p>
-        <h4 style={{ marginLeft: 15, }}>Year 11 Atar selection:</h4>
-        <ul>
-          <li>English</li>
-          <li>Mathematics Applications</li>
-          <li>Computer Science</li>
-          <li>Digital Design</li>
-        </ul>
-        <h3>Experiences: </h3>
-        <ul>
-          <li>4 Week exchange to Virginia, USA to learn at St Christophers from March 24, 2019 to April 22</li>
-        </ul>
-        <h3>Skills: </h3>
-        <ul style={{ flexDirection: "row" }}>
-          <li>HTML, CSS, JS, Python, Nodejs, SQL, NoSQL, Reactjs, React Native (expo),
+          <h4 style={{ marginLeft: 15, }}>Year 11 Atar selection:</h4>
+          <ul>
+            <li>English</li>
+            <li>Mathematics Applications</li>
+            <li>Computer Science</li>
+            <li>Digital Design</li>
+          </ul>
+          <h3>Experiences: </h3>
+          <ul>
+            <li>4 Week exchange to Virginia, USA to learn at St Christophers from March 24, 2019 to April 22</li>
+          </ul>
+          <h3>Skills: </h3>
+          <ul style={{ flexDirection: "row" }}>
+            <li>HTML, CSS, JS, Python, Nodejs, SQL, NoSQL, Reactjs, React Native (expo),
             Shell, Docker, GitHub, Photoshop, Blender, Word, Excel,
             PowerPoint, firebase, gcloud</li>
-        </ul>
-        <Hr />
-        <ul>
-          <li>Took apart and built Computers and different electronics</li>
-          <li>Working with Networking, Servers, Websites</li>
-          <li>Extensive knowledge and use of MacOS, Windows 10 and Linux</li>
-          <li>highly productive in both a team and individual environment</li>
-        </ul>
-        <h3 style={printing ? { marginTop: 50 } : null}>Projects: </h3>
-        <Projects />
+          </ul>
+          <Hr />
+          <ul>
+            <li>Took apart and built Computers and different electronics</li>
+            <li>Working with Networking, Servers, Websites</li>
+            <li>Extensive knowledge and use of MacOS, Windows 10 and Linux</li>
+            <li>highly productive in both a team and individual environment</li>
+          </ul>
+        </div>
+        <div style={{ width: '50vw' }}>
+          <h3 style={printing ? { marginTop: 50 } : null}>Projects: </h3>
+          <Projects />
+        </div>
         {/* <h3 style={printing ? {marginTop: 50} : null}>Certificates: </h3> */}
       </div>
     </div>
