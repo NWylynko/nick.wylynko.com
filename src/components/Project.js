@@ -3,10 +3,11 @@ import {StoreContext} from '../store';
 import { Links } from './Links';
 import { Hover } from './Hover';
 import { font } from './font';
+import {stater} from '../data'
 
-export function Project({ subtitle, title, info, body, links, image }) {
+export function Project({ subtitle, title, info, body, links, image, stat }) {
 
-  const {mobile, printing} = useContext(StoreContext);
+  const {mobile, printing, stats, LoadingStats} = useContext(StoreContext);
   
   return (<div className="tile" style={{
     marginRight: mobile ? 5 : 50,
@@ -20,6 +21,7 @@ export function Project({ subtitle, title, info, body, links, image }) {
       </Hover>
     </div>
     <p style={font(printing, 25, 3)}>{body}</p>
+    { stat ? LoadingStats ? <p style={font(printing, 25, 3)}>Loading...</p> : <p style={font(printing, 25, 3)}>{stater(stat, stats[stat])}</p> : null }
     <Links links={links} />
   </div>);
 }

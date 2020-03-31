@@ -43,11 +43,18 @@ code {
     display: flex;
     flex-direction: row;
   }
+
+  .ProjectsWidth {
+    width: 100vw;
+  }
 }
 
 @media (max-width: 1024px) {
   .content {
     width: 75vw;
+  }
+  .ProjectsWidth {
+    width: 100%;
   }
 }
 

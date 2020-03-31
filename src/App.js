@@ -12,7 +12,12 @@ export default function App() {
 
   const [TextSize, set_TextSize] = useState(50)
 
-  const { setMobile, printing, setPrinting } = useContext(StoreContext);
+  const { setMobile, printing, setPrinting, setStats, setLoadingStats } = useContext(StoreContext);
+
+  useEffect(() => {
+    fetch('https://potato.wylynko.com/stats')
+      .then((res) => { res.text().then(JSON.parse).then(setStats).then(() => setLoadingStats(false)) }).catch(console.warn)
+  }, [setStats, setLoadingStats])
 
   useEffect(() => {
 
@@ -90,7 +95,7 @@ export default function App() {
             <li>highly productive in both a team and individual environment</li>
           </ul>
         </div>
-        <div style={{ width: '50vw' }}>
+        <div className="ProjectsWidth">
           <h3 style={printing ? { marginTop: 50 } : null}>Projects: </h3>
           <Projects />
         </div>

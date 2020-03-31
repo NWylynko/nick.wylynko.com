@@ -1,5 +1,20 @@
 import img from "./img/img"
 
+export function stater(name, info) {
+  if (info) {
+    if (name === 'fountains') {
+      return `Currently ${info.locations} water fountains recorded around the world.`
+    } else if (name === 'miniNotes') {
+      return `Currently ${info.notes} notes pinned on ${info.boards} boards.`
+    } else if (name === 'smallTalk') {
+      return `Currently ${info.messages} messages sent accross ${info.chats} chats.`
+    }
+  } else {
+    return '';
+  }
+  
+}
+
 export const projects = [{
     id: 1,
     subtitle: "2020 - Myself",
@@ -10,7 +25,8 @@ export const projects = [{
     links: [{
       type: "production",
       url: "exp://exp.host/@nwylynko/fountains"
-    }]
+    }],
+    stat: 'fountains'
   },
   {
     id: 2,
@@ -27,7 +43,8 @@ export const projects = [{
         type: "production",
         url: "https://mininotes-420.web.app"
       }
-    ]
+    ],
+    stat: 'miniNotes',
   },
   {
     id: 3,
@@ -44,7 +61,8 @@ export const projects = [{
         type: "production",
         url: "https://small-talk-666.web.app"
       }
-    ]
+    ],
+    stat: 'smallTalk'
   },
   {
     id: 4,
