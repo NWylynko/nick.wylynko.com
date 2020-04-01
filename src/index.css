@@ -62,8 +62,7 @@ code {
   }
 
   .content {
-    max-width: calc(1200px + 8vw);
-    width: 95vw;
+    max-width: 1280px;
     display: flex;
     flex-direction: row;
     
@@ -72,7 +71,6 @@ code {
   .left {
     min-width: 600px;
     max-width: 600px;
-    margin-left: 20px;
     margin-right: 20px;
   }
   
@@ -80,7 +78,6 @@ code {
     min-width: 600px;
     max-width: 600px;
     margin-left: 20px;
-    margin-right: 20px;
   }
 
   
