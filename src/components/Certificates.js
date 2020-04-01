@@ -1,7 +1,7 @@
 import React from 'react';
 import { Hover } from './Hover';
 import { certs } from '../data'
-
+import { Links } from './Links';
 import { BodyText, LinkHeaderText } from './Text'
 
 export const Certificates = () => certs.map(cert => (
@@ -10,6 +10,7 @@ export const Certificates = () => certs.map(cert => (
       <LinkHeaderText className="align">{cert.name} - {cert.date}</LinkHeaderText>
       <BodyText className="align">{cert.body}</BodyText>
     </Hover>
+    <Links links={cert.links} />
     <hr />
   </div>
 ))

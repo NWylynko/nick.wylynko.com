@@ -10,6 +10,7 @@ import fountains from "./projects/fountains.png";
 import realworld from "./projects/realworld.png";
 
 import SAEDesign from "./certs/SAE-design.png";
+import ID_HCI from "./certs/interactive-design-HCI.jpg";
 
 export const projects = {
   RoboHUD,
@@ -25,7 +26,8 @@ export const projects = {
 }
 
 export const certs = {
-  SAEDesign
+  SAEDesign,
+  ID_HCI
 }
 
 export default {
