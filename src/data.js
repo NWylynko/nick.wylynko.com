@@ -149,21 +149,21 @@ export const projects = [{
   }
 ]
 
-export const certs = [{
+export const certs = [
+  {
   id: 2,
   name: 'Interactive Design - Human Computer Interaction',
   date: '2020',
-  body: `This 9 week course was interesting and taught me a lot, 
-    I learnt how to design software around people's needs to ensure 
-    the end user has a good time using it. I gained an understanding 
-    of the human brain that allows me to create engaging user 
-    experiences for mobile and desktop.`,
+  body: `This 9 week course taught me how to design software 
+    around peoples needs to ensure the end user is 
+    engaged and has an enjoyable experience.`,
   image: img.certs.ID_HCI,
   links: [{
     name: "Link",
     url: "https://www.interaction-design.org/nick-wylynko/certificate/course/90deb6fb-43e4-4621-b751-1668853c1944"
   }]
-}, {
+}, 
+{
   id: 1,
   name: 'SAE Design',
   date: '2020',

@@ -1,6 +1,13 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import {StoreContext} from '../store';
 
 export function LinkHeaderText(props) {
+    const {printing} = useContext(StoreContext);
+
+    if (printing) {
+        return <p style={{fontSize: '22px', margin: 1, padding: 1}} {...props}/>
+    }
+
     return <p style={{fontSize: '22px', margin: 1, padding: 1, color: 'LightBlue', textDecoration: 'underline'}} {...props}/>
 }
 

@@ -15,7 +15,7 @@ code {
 .App {
   --main-txt-color: #f1c83c;
   text-align: center;
-  min-height: 100vh;
+  min-height: 99vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,43 +23,67 @@ code {
   color: white;
 }
 
-/* .content {
-  width: 50vw;
-} */
+.title {
+  margin: 0
+}
 
+.certs {
+  text-align: start; 
+  align-items: start; 
+  justify-content: start;
+}
 
-@media (min-width: 1024px) {
+@media (max-width: 1280px) { 
 
+  /* mobile / tablet */
+
+  .title {
+    font-size: 13vmin;
+  }
+
+  .left {
+    min-width: 80vw;
+    max-width: 80vw;
+  }
+
+  .right {
+    min-width: 80vw;
+    max-width: 80vw;
+  } 
+
+}
+
+@media (min-width: 1280px) {
+
+  /* desktop */
+
+  .title {
+    font-size: 7vmin;
+  }
 
   .content {
+    max-width: calc(1200px + 8vw);
     width: 95vw;
     display: flex;
     flex-direction: row;
+    
   }
 
-  .ProjectsWidth {
-    width: 60vw;
-    margin-left: 2vw;
+  .left {
+    min-width: 600px;
+    max-width: 600px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
-}
+  
+  .right {
+    min-width: 600px;
+    max-width: 600px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 
-@media (max-width: 1024px) {
-  .content {
-    width: 75vw;
-  }
-  .ProjectsWidth {
-    width: 100%;
-  }
-}
-
-@media (max-width: 600px) {
-  .content {
-    width: 95vw;
-  }
-}
-
-.wylynko {
-  color: var(--main-txt-color);
+  
 }
 
 @media print {
@@ -79,18 +103,6 @@ code {
 
   margin-right: 50;
   margin-left: 50;
-}
-
-@media (max-width: 600px) {
-  .tile {
-    text-align: start;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
-
-    margin-right: 5;
-    margin-left: 5;
-  }
 }
 
 .align {

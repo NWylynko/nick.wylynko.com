@@ -4,26 +4,11 @@ import { Links } from './Links';
 import { Hover } from './Hover';
 import {stater} from '../data';
 
-import {HeaderText, BodyText, SecondaryText, LinkHeaderText} from './Text'
+import {BodyText, SecondaryText, LinkHeaderText} from './Text'
 
 export function Project({ subtitle, title, info, body, links, image, stat }) {
 
-  const {printing, stats, loadingStats} = useContext(StoreContext);
-
-  if (printing) {
-    return (
-      <div className="tile" >
-        <SecondaryText>{subtitle}</SecondaryText>
-        <div className="align">
-          <HeaderText className="align">{title.toUpperCase()}</HeaderText>
-          <SecondaryText className="align">&nbsp;{info}</SecondaryText>
-        </div>
-        <BodyText>{body}</BodyText>
-        { stat ? loadingStats ? <BodyText>Loading...</BodyText> : <BodyText>{stater(stat, stats[stat])}</BodyText> : null }
-        <Links links={links} />
-      </div>
-    )
-  }
+  const {stats, loadingStats} = useContext(StoreContext);
   
   return (
   <div className="tile">

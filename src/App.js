@@ -29,7 +29,7 @@ export default function App() {
     let displayWidth = mobile ? width : width * 0.5
 
     setMobile(mobile)
-    set_TextSize(printing ? 100 : displayWidth / 7)
+    set_TextSize(printing ? 100 : displayWidth / 15)
 
     return function cleanup() {
       window.removeEventListener('resize', updateWindowDimensions);
@@ -55,17 +55,16 @@ export default function App() {
   return (
     <div className="App">
       <div className="content">
-        <div>
-          <div className="align" >
-            <h1 className="align name" style={{ margin: 0, fontSize: TextSize }}>Nick&nbsp;</h1>
-            <h1 className="align name wylynko" style={{ margin: 0, fontSize: TextSize, }}>Wylynko</h1>
+        <div className="left">
+          <div style={{display: 'flex', flexDirection: 'row'}} >
+            <h1 className="title">Nick&nbsp;</h1>
+            <h1 className="title maincolour">Wylynko</h1>
           </div>
           <BodyText>Perth, WA, Australia · <a href="tel:+61434901870" style={{ color: 'white' }}>0434 901 870</a></BodyText>
           <Link />
           <HeaderText>
             Objective: To gain further knowledge and experience
-            in Software and Hardware in this rapidly developing world,
-            by gettings a part time or remote position at your business.
+            in Software and Hardware in this rapidly developing world.
           </HeaderText>
           <h3>Education: </h3>
           <HeaderText>
@@ -97,18 +96,18 @@ export default function App() {
           </ul>
           <hr />
           <ul>
-            <BodyText>· Took apart and built Computers and different electronics</BodyText>
+            <BodyText>· Took apart, put back together and built  Computers</BodyText>
             <BodyText>· Working with Networking, Servers, Websites</BodyText>
             <BodyText>· Extensive knowledge and use of MacOS, Windows 10 and Linux</BodyText>
             <BodyText>· highly productive in both a team and individual environment</BodyText>
           </ul>
           <h3>Certificates: </h3>
-          <div style={{textAlign: 'start', alignItems: 'start', justifyContent: 'start'}}>
+          <div className="certs">
             <Certificates />
-            </div>
+          </div>
           
         </div>
-        <div className="ProjectsWidth">
+        <div className="right">
           <h3 style={printing ? { marginTop: 50 } : null}>Projects: </h3>
           <Projects />
         </div>
