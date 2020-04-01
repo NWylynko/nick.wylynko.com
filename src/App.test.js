@@ -1,9 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import App from './App';
+import { testComponent } from './utils/testComponent';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
-});
+testComponent('App', <App />, {_printing: false, _stats: false, _statsLoading: false})
+testComponent('App', <App />, {_printing: true, _stats: false, _statsLoading: false})

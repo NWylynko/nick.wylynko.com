@@ -2,10 +2,10 @@ import React, { useState, createContext } from 'react';
 
 export const StoreContext = createContext(null);
 
-export default ({ children }) => {
-  const [printing, setPrinting] = useState(false);
-  const [stats, setStats] = useState(false);
-  const [loadingStats, setLoadingStats] = useState(true);
+export default ({ children, _printing = false, _stats = false, _loadingStats = true }) => {
+  const [printing, setPrinting] = useState(_printing);
+  const [stats, setStats] = useState(_stats);
+  const [loadingStats, setLoadingStats] = useState(_loadingStats);
 
   const store = {
     printing,
