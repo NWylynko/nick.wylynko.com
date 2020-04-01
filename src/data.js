@@ -148,3 +148,11 @@ export const projects = [{
     image: img.projects.computers,
   }
 ]
+
+export const certs = [{
+  id: 1,
+  name: 'SAE Design',
+  date: '2020',
+  body: 'Fun three day course on the holidays, I learnt some new tips and tricks with illustrator and photoshop.',
+  image: img.certs.SAEDesign
+}]

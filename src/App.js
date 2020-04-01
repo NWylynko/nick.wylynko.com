@@ -2,9 +2,10 @@ import React, { useState, useEffect, useContext } from 'react';
 import { StoreContext } from './store';
 
 import { Projects } from './components/Projects';
+import { Certificates } from './components/Certificates';
 import { Link } from './components/Link';
 
-import { HeaderText, BodyText, SecondaryText, LinkHeaderText } from './components/Text'
+import { HeaderText, BodyText } from './components/Text'
 
 export default function App() {
 
@@ -101,12 +102,16 @@ export default function App() {
             <BodyText>· Extensive knowledge and use of MacOS, Windows 10 and Linux</BodyText>
             <BodyText>· highly productive in both a team and individual environment</BodyText>
           </ul>
+          <h3>Certificates: </h3>
+          <div style={{textAlign: 'start', alignItems: 'start', justifyContent: 'start'}}>
+            <Certificates />
+            </div>
+          
         </div>
         <div className="ProjectsWidth">
           <h3 style={printing ? { marginTop: 50 } : null}>Projects: </h3>
           <Projects />
         </div>
-        {/* <h3 style={printing ? {marginTop: 50} : null}>Certificates: </h3> */}
       </div>
     </div>
   );
