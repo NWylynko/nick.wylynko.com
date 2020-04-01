@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { StoreContext } from './store';
 
-import { Hr } from './components/Hr';
 import { Projects } from './components/Projects';
 import { Link } from './components/Link';
 
@@ -87,7 +86,7 @@ export default function App() {
             Shell, Docker, GitHub, Photoshop, Blender, Word, Excel,
             PowerPoint, firebase, gcloud</li>
           </ul>
-          <Hr />
+          <hr />
           <ul>
             <li>Took apart and built Computers and different electronics</li>
             <li>Working with Networking, Servers, Websites</li>
