@@ -16,6 +16,17 @@ export function stater(name, info) {
 }
 
 export const projects = [{
+  id: 10,
+  subtitle: "2020 - Myself",
+  title: "Conduit - realworld",
+  info: "IPhone, Android - React Native, CRUD - REST api",
+  body: "ported Conduit [https://github.com/gothinkster/realworld] over to React Native in 4 days, while sticking to the spec.",
+  image: img.projects.realworld,
+  links: [{
+    type: "repo",
+    url: "https://github.com/NWylynko/realworld-react-native/"
+  }]
+},{
     id: 1,
     subtitle: "2020 - Myself",
     title: "Fountains",

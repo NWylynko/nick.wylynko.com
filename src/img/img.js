@@ -7,6 +7,7 @@ import computers from "./projects/computers.jpg";
 import cookies from "./projects/cookies.png";
 import mininotes from "./projects/mininotes.png";
 import fountains from "./projects/fountains.png";
+import realworld from "./projects/realworld.png";
 
 import SAEDesign from "./certs/SAE-design.png";
 
@@ -19,7 +20,8 @@ export const projects = {
   computers,
   cookies,
   mininotes,
-  fountains
+  fountains,
+  realworld
 }
 
 export const certs = {
