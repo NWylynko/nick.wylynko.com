@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { StoreContext } from '../store';
 
-import {BodyText, BodyA} from './Text'
+import { BodyText, BodyA } from './Text'
 
 export function Links({ links }) {
   const { printing } = useContext(StoreContext);

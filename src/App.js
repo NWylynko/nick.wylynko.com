@@ -8,7 +8,7 @@ import { Link } from './components/Link';
 import { HeaderText, BodyText } from './components/Text'
 
 export default function App() {
-  const {printing, setPrinting, setStats, setLoadingStats } = useContext(StoreContext);
+  const { printing, setPrinting, setStats, setLoadingStats } = useContext(StoreContext);
 
   useEffect(() => {
     fetch('https://potato.wylynko.com/stats')
@@ -29,7 +29,7 @@ export default function App() {
     <div className="App">
       <div className="content">
         <div className="left">
-          <div style={{display: 'flex', flexDirection: 'row'}} >
+          <div style={{ display: 'flex', flexDirection: 'row' }} >
             <h1 className="title">Nick&nbsp;</h1>
             <h1 className="title maincolour">Wylynko</h1>
           </div>
@@ -57,7 +57,7 @@ export default function App() {
           </div>
           <h3>Experiences: </h3>
           <ul>
-          <BodyText>· 4 Week exchange to Virginia, USA to learn at St Christophers from March 24, 2019 to April 22</BodyText>
+            <BodyText>· 4 Week exchange to Virginia, USA to learn at St Christophers from March 24, 2019 to April 22</BodyText>
           </ul>
           <h3>Skills: </h3>
           <ul>
@@ -78,7 +78,7 @@ export default function App() {
           <div className="certs">
             <Certificates />
           </div>
-          
+
         </div>
         <div className="right">
           <h3 style={printing ? { marginTop: 50 } : null}>Projects: </h3>

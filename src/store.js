@@ -1,8 +1,8 @@
-import React, {useState, createContext} from 'react';
+import React, { useState, createContext } from 'react';
 
 export const StoreContext = createContext(null);
 
-export default ({children}) => {
+export default ({ children }) => {
   const [printing, setPrinting] = useState(false);
   const [stats, setStats] = useState(false);
   const [loadingStats, setLoadingStats] = useState(true);
@@ -10,9 +10,9 @@ export default ({children}) => {
   const store = {
     printing,
     setPrinting,
-    stats, 
+    stats,
     setStats,
-    loadingStats, 
+    loadingStats,
     setLoadingStats
   };
 

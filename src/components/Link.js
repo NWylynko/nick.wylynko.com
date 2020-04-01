@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { StoreContext } from '../store';
 
-import {BodyText, BodyA} from './Text'
+import { BodyText, BodyA } from './Text'
 
 export function Link() {
   const { printing } = useContext(StoreContext);
@@ -14,7 +14,7 @@ export function Link() {
     </div>);
   }
   else {
-    return (<div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
+    return (<div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
       <BodyA className="maincolour" href="mailto:nick1014375@gmail.com">Email</BodyA>
       <BodyText> · </BodyText>
       <BodyA className="maincolour" href="https://linkedin.com/in/nick-wylynko-17a202193/">LinkedIn</BodyA>
