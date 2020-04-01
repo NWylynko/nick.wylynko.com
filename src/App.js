@@ -8,39 +8,12 @@ import { Link } from './components/Link';
 import { HeaderText, BodyText } from './components/Text'
 
 export default function App() {
-
-  const [width, set_width] = useState(window.innerWidth)
-  const [height, set_height] = useState(window.innerHeight)
-
-  const [TextSize, set_TextSize] = useState(50)
-
-  const { setMobile, printing, setPrinting, setStats, setLoadingStats } = useContext(StoreContext);
+  const {printing, setPrinting, setStats, setLoadingStats } = useContext(StoreContext);
 
   useEffect(() => {
     fetch('https://potato.wylynko.com/stats')
       .then((res) => { res.text().then(JSON.parse).then(setStats).then(() => setLoadingStats(false)) }).catch(console.warn)
   }, [setStats, setLoadingStats])
-
-  useEffect(() => {
-
-    window.addEventListener('resize', updateWindowDimensions);
-
-    let mobile = height >= width
-    let displayWidth = mobile ? width : width * 0.5
-
-    setMobile(mobile)
-    set_TextSize(printing ? 100 : displayWidth / 15)
-
-    return function cleanup() {
-      window.removeEventListener('resize', updateWindowDimensions);
-    };
-
-  }, [width, height, printing, setMobile]);
-
-  function updateWindowDimensions() {
-    set_width(window.innerWidth)
-    set_height(window.innerHeight)
-  }
 
   useEffect(() => {
     window.onbeforeprint = () => {
