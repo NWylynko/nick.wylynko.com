@@ -17,8 +17,6 @@ export function Hover({ children, overlay }) {
     }
   }
   return (<div
-    // onMouseEnter={() => { set_hovering(true) }}
-    // onMouseLeave={() => { set_hovering(false) }}>
     onClick={() => { set_hovering(!hovering); }}>
     {children}
     <Overlay />

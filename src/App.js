@@ -70,18 +70,22 @@ export default function App() {
             currently in year 11 (Queenslea), graduate in 2021 cohort.
         </p>
           <h4 style={{ marginLeft: 15, }}>Year 11 Atar selection:</h4>
+          <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around'}}>
           <ul>
             <li>English</li>
             <li>Mathematics Applications</li>
+          </ul>
+          <ul>
             <li>Computer Science</li>
             <li>Digital Design</li>
           </ul>
+          </div>
           <h3>Experiences: </h3>
           <ul>
             <li>4 Week exchange to Virginia, USA to learn at St Christophers from March 24, 2019 to April 22</li>
           </ul>
           <h3>Skills: </h3>
-          <ul style={{ flexDirection: "row" }}>
+          <ul>
             <li>HTML, CSS, JS, Python, Nodejs, SQL, NoSQL, Reactjs, React Native (expo),
             Shell, Docker, GitHub, Photoshop, Blender, Word, Excel,
             PowerPoint, firebase, gcloud</li>

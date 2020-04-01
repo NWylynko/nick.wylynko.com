@@ -23,7 +23,7 @@ export const projects = [{
   body: "ported Conduit [https://github.com/gothinkster/realworld] over to React Native in 4 days, while sticking to the spec.",
   image: img.projects.realworld,
   links: [{
-    type: "repo",
+    name: "Github / Source",
     url: "https://github.com/NWylynko/realworld-react-native/"
   }]
 },{
@@ -34,7 +34,7 @@ export const projects = [{
     body: "Public map of water fountains around the world.",
     image: img.projects.fountains,
     links: [{
-      type: "production",
+      name: "Link / Demo",
       url: "exp://exp.host/@nwylynko/fountains"
     }],
     stat: 'fountains'
@@ -47,11 +47,11 @@ export const projects = [{
     body: "Public pin board for posting notes forever.",
     image: img.projects.mininotes,
     links: [{
-        type: "repo",
+        name: "Github / Source",
         url: "https://github.com/nwylynko/MiniNotes"
       },
       {
-        type: "production",
+        name: "Link / Demo",
         url: "https://mininotes-420.web.app"
       }
     ],
@@ -65,11 +65,11 @@ export const projects = [{
     body: "Instant Messaging app that works accross all platforms.",
     image: img.projects.smalltalk,
     links: [{
-        type: "repo",
+        name: "Github / Source",
         url: "https://github.com/nwylynko/Small-Talk"
       },
       {
-        type: "production",
+        name: "Link / Demo",
         url: "https://small-talk-666.web.app"
       }
     ],
@@ -83,7 +83,7 @@ export const projects = [{
     body: "Developing/Coding tools to control robots in school robots’ competitions.",
     image: img.projects.RoboHUD,
     links: [{
-      type: "repo",
+      name: "Github / Source",
       url: "https://github.com/CCGSRobotics/RoboHUD"
     }]
   },
@@ -95,7 +95,7 @@ export const projects = [{
     body: "Program for sharing messages and images in group chats.",
     image: img.projects.majorprojectgeet,
     links: [{
-      type: "repo",
+      name: "Github / Source",
       url: "https://github.com/ccgs-10asd-2019/major-project-geet"
     }]
   },
@@ -107,7 +107,7 @@ export const projects = [{
     body: "Developed from scratch over 30 hours, runs and controls a Minecraft server remotely.",
     image: img.projects.mccontrol,
     links: [{
-      type: "repo",
+      name: "Github / Source",
       url: "https://github.com/NWylynko/MCControl"
     }]
   },
@@ -119,7 +119,7 @@ export const projects = [{
     body: "Taught myself how to create React Native apps for phones with basic JavaScript knowledge and put this game together over 2 weeks.",
     image: img.projects.cookies,
     links: [{
-      type: "repo",
+      name: "Github / Source",
       url: "https://github.com/NWylynko/Cookies"
     }]
   },
@@ -131,7 +131,7 @@ export const projects = [{
     body: "While overseas I created scripts to quickly install and setup programs on remote servers.",
     image: img.projects.randomscripts,
     links: [{
-      type: "repo",
+      name: "Github / Source",
       url: "https://github.com/NWylynko/Random-Scripts"
     }]
   },
