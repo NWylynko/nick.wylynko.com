@@ -20,7 +20,7 @@ export const projects = [{
   subtitle: "2020 - Myself",
   title: "Conduit - realworld",
   info: "IPhone, Android - React Native, CRUD - REST api",
-  body: "ported Conduit [https://github.com/gothinkster/realworld] over to React Native in 4 days, while sticking to the spec.",
+  body: "Ported Conduit [https://github.com/gothinkster/realworld] over to React Native in 4 days, while sticking to the spec.",
   image: img.projects.realworld,
   links: [{
     name: "Github / Source",
