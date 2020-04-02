@@ -83,7 +83,17 @@ code {
   
 }
 
+.phone {
+  color: white;
+}
+
 @media print {
+
+  .phone {
+    color: black;
+  }
+
+
   .App {
     --main-txt-color: #ff8585;
     background: #fff;
@@ -104,11 +114,6 @@ code {
 
 .align {
   display: inline-block;
-}
-
-.maincolour {
-  color: var(--main-txt-color);
-  /* text-decoration: none; */
 }
 
 ul {

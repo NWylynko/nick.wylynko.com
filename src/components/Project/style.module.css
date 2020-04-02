@@ -1,0 +1,9 @@
+.links {
+  flex-direction: row;
+}
+
+@media print {
+  .links {
+    flex-direction: column;
+  }
+}

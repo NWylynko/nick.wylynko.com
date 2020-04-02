@@ -18,7 +18,7 @@ export function HeaderText(props) {
 
 export function BodyA(props) {
   // eslint-disable-next-line jsx-a11y/anchor-has-content
-  return <a className={styles.medium} {...props} />
+  return <a className={[styles.medium, styles.mainTxtColor].join(' ') } {...props} />
 }
 
 export function BodyText(props) {

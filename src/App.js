@@ -31,9 +31,9 @@ export default function App() {
         <div className="left">
           <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }} >
             <h1 className="title">Nick&nbsp;</h1>
-            <h1 className="title maincolour">Wylynko</h1>
+            <h1 className="title" style={{color: 'var(--main-txt-color)'}}>Wylynko</h1>
           </div>
-          <BodyText>Perth, WA, Australia · <a href="tel:+61434901870" style={{ color: 'white' }}>0434 901 870</a></BodyText>
+          <BodyText>Perth, WA, Australia ·&nbsp;<a href="tel:+61434901870" className="phone">0434 901 870</a></BodyText>
           <Link />
           <HeaderText>
             Objective: To gain further knowledge and experience

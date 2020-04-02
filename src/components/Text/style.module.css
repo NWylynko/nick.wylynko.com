@@ -27,3 +27,7 @@
   margin: 1px;
   padding: 1px;
 }
+
+.mainTxtColor {
+  color: var(--main-txt-color);
+}

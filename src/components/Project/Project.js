@@ -3,6 +3,7 @@ import { StoreContext } from '../../store';
 import Links from '../Links';
 import ClickToShowImage from '../ClickToShowImage';
 import { stater } from '../../data';
+import styles from './style.module.css';
 
 import { BodyText, SecondaryText, LinkHeaderText } from '../Text/'
 
@@ -19,7 +20,7 @@ export function Project({ subtitle, title, info, body, links, image, stat }) {
         </ClickToShowImage>
       <BodyText>{body}</BodyText>
       {stat ? loadingStats ? <BodyText>Loading...</BodyText> : <BodyText>{stater(stat, stats[stat])}</BodyText> : null}
-      <div style={{display: 'flex'}}>
+      <div className={styles.links}>
         <Links links={links} />
       </div>
     </div>
