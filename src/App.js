@@ -29,7 +29,7 @@ export default function App() {
     <div className="App">
       <div className="content">
         <div className="left">
-          <div style={{ display: 'flex', flexDirection: 'row' }} >
+          <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }} >
             <h1 className="title">Nick&nbsp;</h1>
             <h1 className="title maincolour">Wylynko</h1>
           </div>
@@ -40,25 +40,19 @@ export default function App() {
             in Software and Hardware in this rapidly developing world.
           </HeaderText>
           <h3>Education: </h3>
-          <HeaderText>
+          <BodyText>
             Day boy at Christ Church Grammar School since year 4,
-            currently in year 11 (Queenslea), graduate in 2021 cohort.
-          </HeaderText>
-          <h4>Year 11 Atar selection:</h4>
-          <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around' }}>
-            <ul >
-              <BodyText>· English</BodyText>
-              <BodyText>· Mathematics Applications</BodyText>
-            </ul>
-            <ul>
-              <BodyText>· Computer Science</BodyText>
-              <BodyText>· Digital Design</BodyText>
-            </ul>
+            currently in year {12 - (2021 - new Date().getFullYear())} (Queenslea), graduate in 2021 cohort.
+          </BodyText>
+          <h3>Year 11 Atar selection:</h3>
+          <div style={{ justifyContent: 'space-around' }}>
+            <BodyText>English</BodyText><BodyText>·</BodyText>
+            <BodyText>Mathematics Applications</BodyText><BodyText>·</BodyText>
+            <BodyText>Computer Science</BodyText><BodyText>·</BodyText>
+            <BodyText>Digital Design</BodyText>
           </div>
           <h3>Experiences: </h3>
-          <ul>
             <BodyText>· 4 Week exchange to Virginia, USA to learn at St Christophers from March 24, 2019 to April 22</BodyText>
-          </ul>
           <h3>Skills: </h3>
           <ul>
             <BodyText>

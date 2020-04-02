@@ -38,17 +38,17 @@ code {
   /* mobile / tablet */
 
   .title {
-    font-size: 13vmin;
+    font-size: 15vmin;
   }
 
   .left {
-    min-width: 80vw;
-    max-width: 80vw;
+    min-width: 95vw;
+    max-width: 95vw;
   }
 
   .right {
-    min-width: 80vw;
-    max-width: 80vw;
+    min-width: 95vw;
+    max-width: 95vw;
   } 
 
 }

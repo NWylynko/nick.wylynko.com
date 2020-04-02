@@ -17,9 +17,11 @@ export function ClickToShowImage({ children, image }) {
       return (null);
     }
   }
-  return (<div
+  return (
+  <div
     onClick={() => { set_hovering(!hovering); }}>
     {children}
     <Overlay />
-  </div>);
+  </div>
+  );
 }
