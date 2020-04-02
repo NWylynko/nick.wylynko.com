@@ -16,7 +16,7 @@ export function Project({ subtitle, title, info, body, links, image, stat }) {
       <SecondaryText>{subtitle}</SecondaryText>
         <ClickToShowImage image={<img src={image} alt={title} />}>
             <LinkHeaderText>{title.toUpperCase()}</LinkHeaderText>
-            <SecondaryText>&nbsp;{info}</SecondaryText>
+            <SecondaryText>{info}</SecondaryText>
         </ClickToShowImage>
       <BodyText>{body}</BodyText>
       {stat ? loadingStats ? <BodyText>Loading...</BodyText> : <BodyText>{stater(stat, stats[stat])}</BodyText> : null}
