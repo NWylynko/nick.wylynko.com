@@ -2,17 +2,17 @@ import React, { useState, createContext } from 'react';
 
 export const StoreContext = createContext(null);
 
-export default ({ children, _printing = false, _stats = false, _loadingStats = true }) => {
-  const [printing, setPrinting] = useState(_printing);
-  const [stats, setStats] = useState(_stats);
-  const [loadingStats, setLoadingStats] = useState(_loadingStats);
+export default ({ children, printing = false, stats = false, loadingStats = true }) => {
+  const [_printing, setPrinting] = useState(printing);
+  const [_stats, setStats] = useState(stats);
+  const [_loadingStats, setLoadingStats] = useState(loadingStats);
 
   const store = {
-    printing,
+    printing: _printing,
     setPrinting,
-    stats,
+    stats: _stats,
     setStats,
-    loadingStats,
+    loadingStats: _loadingStats,
     setLoadingStats
   };
 

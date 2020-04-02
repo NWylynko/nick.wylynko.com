@@ -1,12 +1,13 @@
 import React from 'react';
-export function Hover({ children, overlay }) {
+
+export function ClickToShowImage({ children, image }) {
   const [hovering, set_hovering] = React.useState(false);
   function Overlay() {
     // if user hovering
     if (hovering) {
       // if image is defined
-      if (overlay.props.src) {
-        return (overlay);
+      if (image?.props?.src) {
+        return (image);
       }
       else {
         return (null);

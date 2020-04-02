@@ -1,7 +1,7 @@
 import React from 'react';
 import { Project } from './Project';
-import { testComponent } from '../utils/testComponent';
-import img from '../img/img'
+import { testComponent } from '../../utils/testComponent';
+import img from '../../img/img'
 
 const testProject = {
   id: 1,
@@ -17,4 +17,5 @@ const testProject = {
   stat: 'fountains'
 }
 
-testComponent('Project', <Project {...testProject} />, { _printing: false, _stats: false, _statsLoading: false })
+testComponent('Project', <Project {...testProject} />, { printing: false, stats: false, statsLoading: false })
+testComponent('Project', <Project {...testProject} />, { printing: true, stats: false, statsLoading: false })

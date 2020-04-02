@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { StoreContext } from '../store';
+import { StoreContext } from '../../store';
 
 export function LinkHeaderText(props) {
   const { printing } = useContext(StoreContext);

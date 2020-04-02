@@ -1,6 +1,6 @@
 import React from 'react';
 import { LinkHeaderText, HeaderText, BodyA, BodyText, SecondaryText} from './Text';
-import { testComponent } from '../utils/testComponent';
+import { testComponent } from '../../utils/testComponent';
 
 testComponent('Text/LinkHeaderText', <LinkHeaderText>testing</LinkHeaderText>, {_printing: false, _stats: false, _statsLoading: false})
 testComponent('Text/LinkHeaderText', <LinkHeaderText>testing</LinkHeaderText>, {_printing: true, _stats: false, _statsLoading: false})

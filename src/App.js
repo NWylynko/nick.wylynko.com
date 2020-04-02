@@ -1,11 +1,11 @@
 import React, { useEffect, useContext } from 'react';
 import { StoreContext } from './store';
 
-import { Projects } from './components/Projects';
-import { Certificates } from './components/Certificates';
-import { Link } from './components/Link';
+import Projects from './components/Projects/';
+import Certificates from './components/Certificates/';
+import Link from './components/Link/';
 
-import { HeaderText, BodyText } from './components/Text'
+import { HeaderText, BodyText } from './components/Text/'
 
 export default function App() {
   const { printing, setPrinting, setStats, setLoadingStats } = useContext(StoreContext);
