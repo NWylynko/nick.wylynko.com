@@ -84,7 +84,6 @@ jobs:
         uses: actions/download-artifact@master
         with:
           name: storybook-build
-          path: storybook/build
 
       - uses: w9jds/firebase-action@master
         with:
