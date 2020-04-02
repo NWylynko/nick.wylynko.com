@@ -39,13 +39,13 @@ jobs:
     - name: Build StoryBook
       uses: borales/actions-yarn@v2.0.0
       with:
-        cmd: build-storybook
+        cmd: build-storybook -o storybook/build
 
     - name: Archive StoryBook Artifact
       uses: actions/upload-artifact@master
       with:
-        name: storybook
-        path: storybook-static
+        name: storybook-build
+        path: storybook/build
 
   deploy-main:
 
@@ -83,11 +83,12 @@ jobs:
       - name: Download Artifact
         uses: actions/download-artifact@master
         with:
-          name: storybook
+          name: storybook-build
+          path: storybook/build
 
       - uses: w9jds/firebase-action@master
         with:
           args: deploy --only hosting:story-nick-wylynko
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-          PROJECT_PATH: ./firebase-storybook.json
+          PROJECT_PATH: ./storybook

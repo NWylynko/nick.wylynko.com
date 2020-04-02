@@ -1,7 +1,7 @@
 {
   "hosting": {
     "site": "story-nick-wylynko",
-    "public": "storybook-static",
+    "public": "build",
     "ignore": [
       "firebase.json",
       "**/.*",
