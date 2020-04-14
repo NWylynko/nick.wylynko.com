@@ -168,6 +168,6 @@ export const certs = [
     name: 'SAE Design',
     date: '2020',
     body: `Fun three day course on the holidays, I learnt some new tips 
-    and tricks with illustrator and photoshop.`,
+    and tricks with Illustrator and Photoshop.`,
     image: img.certs.SAEDesign
   }]

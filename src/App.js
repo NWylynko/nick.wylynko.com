@@ -56,7 +56,7 @@ export default function App() {
           <h3>Skills: </h3>
           <ul>
             <BodyText>
-              HTML, CSS, JS, Python, Nodejs, SQL, NoSQL, Reactjs, React Native (expo),
+              HTML, CSS, JS, Python, Nodejs, SQL, NoSQL, Reactjs, React Native (with and without expo),
               Shell, Docker, GitHub, Photoshop, Blender, Word, Excel,
               PowerPoint, firebase, gcloud
             </BodyText>
