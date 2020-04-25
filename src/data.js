@@ -8,6 +8,8 @@ export function stater(name, info) {
       return `Currently ${info.notes} notes pinned on ${info.boards} boards.`
     } else if (name === 'smallTalk') {
       return `Currently ${info.messages} messages sent accross ${info.chats} chats.`
+    } else if (name === 'connect420') {
+      return `Currently ${info.connectedRightNow} players on right now, with ${info.gamesPlayed} games played.`
     }
   } else {
     return '';
@@ -16,6 +18,27 @@ export function stater(name, info) {
 }
 
 export const projects = [{
+  id: 11,
+  subtitle: "Year 11 - School - Computer Science first project",
+  title: "Connect 420",
+  info: "Web app / PWA - Reactjs, TypeScript, Socketio, Redis, Docker",
+  body: "School Project was to create a simple game, I choose to create a clone of Connect 4, Connect 420 an online multiplayer retro themed version of the game. I taught myself how to use Redis to store the state of the boards and create a game server that can easily be scaled to handle thousands of players simultaneously. I touched up on my docker skills to containerize the server to quickly and easily deploy the server anywhere.",
+  image: img.projects.connect420,
+  links: [{
+    name: "Link / Demo",
+    url: "https://connect420.web.app/"
+  },{
+    name: "Github / Source for client",
+    url: "https://github.com/NWylynko/connect420/"
+  }, {
+    name: "Github / Source for server",
+    url: "https://github.com/NWylynko/connect420-server/"
+  }, {
+    name: "Docker / Container of server",
+    url: "https://hub.docker.com/r/nwylynko/connect420-server/"
+  }],
+  stat: 'connect420'
+},{
   id: 10,
   subtitle: "2020 - Myself",
   title: "Conduit - realworld",

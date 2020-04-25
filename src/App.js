@@ -11,9 +11,14 @@ export default function App() {
   const { printing, setPrinting, setStats, setLoadingStats } = useContext(StoreContext);
 
   useEffect(() => {
-    fetch('https://potato.wylynko.com/stats')
-      .then((res) => { res.text().then(JSON.parse).then(setStats).then(() => setLoadingStats(false)) }).catch(console.warn)
-  }, [setStats, setLoadingStats])
+    let fetch1 = fetch('https://potato.wylynko.com/stats')
+      .then(res => { res.text().then(JSON.parse).then(stats => setStats(oldState => { return { ...oldState, ...stats }}))}).catch(console.warn)
+    let fetch2 = fetch('https://potato.wylynko.com/c420/stats')
+      .then(res => { res.text().then(JSON.parse).then(stats => setStats(oldState => { return { ...oldState, connect420: stats }}))}).catch(console.warn)
+
+    Promise.all([fetch1, fetch2]).finally(() => setLoadingStats(false))
+    
+    }, [setStats, setLoadingStats])
 
   useEffect(() => {
     window.onbeforeprint = () => {

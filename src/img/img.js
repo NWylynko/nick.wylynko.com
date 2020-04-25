@@ -8,6 +8,7 @@ import cookies from "./projects/cookies.png";
 import mininotes from "./projects/mininotes.png";
 import fountains from "./projects/fountains.png";
 import realworld from "./projects/realworld.png";
+import connect420 from './projects/connect420.png';
 
 import SAEDesign from "./certs/SAE-design.png";
 import ID_HCI from "./certs/interactive-design-HCI.jpg";
@@ -22,7 +23,8 @@ export const projects = {
   cookies,
   mininotes,
   fountains,
-  realworld
+  realworld,
+  connect420
 }
 
 export const certs = {
