@@ -25,16 +25,19 @@ export const projects = [{
   body: "School Project was to create a simple game, I choose to create a clone of Connect 4, Connect 420 an online multiplayer retro themed version of the game. I taught myself how to use Redis to store the state of the boards and create a game server that can easily be scaled to handle thousands of players simultaneously. I touched up on my docker skills to containerize the server to quickly and easily deploy the server anywhere.",
   image: img.projects.connect420,
   links: [{
-    name: "Link / Demo",
+    name: "Link,",
     url: "https://connect420.web.app/"
   },{
-    name: "Github / Source for client",
+    name: "Github - Client,",
     url: "https://github.com/NWylynko/connect420/"
   }, {
-    name: "Github / Source for server",
+    name: "Github - Server,",
     url: "https://github.com/NWylynko/connect420-server/"
   }, {
-    name: "Docker / Container of server",
+    name: "Docker - Client,",
+    url: "https://hub.docker.com/r/nwylynko/connect420/"
+  }, {
+    name: "Docker - Server,",
     url: "https://hub.docker.com/r/nwylynko/connect420-server/"
   }],
   stat: 'connect420'
@@ -46,7 +49,7 @@ export const projects = [{
   body: "Ported Conduit [https://github.com/gothinkster/realworld] over to React Native in 4 days, while sticking to the spec.",
   image: img.projects.realworld,
   links: [{
-    name: "Github / Source",
+    name: "Github",
     url: "https://github.com/NWylynko/realworld-react-native/"
   }]
 }, {
@@ -57,7 +60,7 @@ export const projects = [{
   body: "Public map of water fountains around the world.",
   image: img.projects.fountains,
   links: [{
-    name: "Link / Demo",
+    name: "Link (need expo)",
     url: "exp://exp.host/@nwylynko/fountains"
   }],
   stat: 'fountains'
@@ -70,11 +73,11 @@ export const projects = [{
   body: "Public pin board for posting notes forever.",
   image: img.projects.mininotes,
   links: [{
-    name: "Github / Source",
+    name: "Github,",
     url: "https://github.com/nwylynko/MiniNotes"
   },
   {
-    name: "Link / Demo",
+    name: "Link",
     url: "https://mininotes-420.web.app"
   }
   ],
@@ -88,11 +91,11 @@ export const projects = [{
   body: "Instant Messaging app that works accross all platforms.",
   image: img.projects.smalltalk,
   links: [{
-    name: "Github / Source",
+    name: "Github,",
     url: "https://github.com/nwylynko/Small-Talk"
   },
   {
-    name: "Link / Demo",
+    name: "Link",
     url: "https://small-talk-666.web.app"
   }
   ],
@@ -106,7 +109,7 @@ export const projects = [{
   body: "Developing/Coding tools to control robots in school robots’ competitions.",
   image: img.projects.RoboHUD,
   links: [{
-    name: "Github / Source",
+    name: "Github",
     url: "https://github.com/CCGSRobotics/RoboHUD"
   }]
 },
@@ -118,7 +121,7 @@ export const projects = [{
   body: "Program for sharing messages and images in group chats.",
   image: img.projects.majorprojectgeet,
   links: [{
-    name: "Github / Source",
+    name: "Github",
     url: "https://github.com/ccgs-10asd-2019/major-project-geet"
   }]
 },
@@ -130,7 +133,7 @@ export const projects = [{
   body: "Developed from scratch over 30 hours, runs and controls a Minecraft server remotely.",
   image: img.projects.mccontrol,
   links: [{
-    name: "Github / Source",
+    name: "Github",
     url: "https://github.com/NWylynko/MCControl"
   }]
 },
@@ -142,7 +145,7 @@ export const projects = [{
   body: "Taught myself how to create React Native apps for phones with basic JavaScript knowledge and put this game together over 2 weeks.",
   image: img.projects.cookies,
   links: [{
-    name: "Github / Source",
+    name: "Github",
     url: "https://github.com/NWylynko/Cookies"
   }]
 },
@@ -154,7 +157,7 @@ export const projects = [{
   body: "While overseas I created scripts to quickly install and setup programs on remote servers.",
   image: img.projects.randomscripts,
   links: [{
-    name: "Github / Source",
+    name: "Github",
     url: "https://github.com/NWylynko/Random-Scripts"
   }]
 },
