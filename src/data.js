@@ -177,7 +177,7 @@ export const projects = [{
 
 export const certs = [
 {
-    id: 2,
+    id: 3,
     name: 'Interactive Design - Mobile User Experience',
     date: '2020',
     body: `This course further extended my knowledge in creating mobile apps that have an emphasis on the end user having a great experience using it.`,
