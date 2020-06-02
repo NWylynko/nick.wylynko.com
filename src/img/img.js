@@ -12,6 +12,7 @@ import connect420 from './projects/connect420.png';
 
 import SAEDesign from "./certs/SAE-design.png";
 import ID_HCI from "./certs/interactive-design-HCI.jpg";
+import ID_MobileUX from "./certs/interactive-design-MobileUX.jpg";
 
 export const projects = {
   RoboHUD,
@@ -29,7 +30,8 @@ export const projects = {
 
 export const certs = {
   SAEDesign,
-  ID_HCI
+  ID_HCI,
+  ID_MobileUX
 }
 
 export default {
