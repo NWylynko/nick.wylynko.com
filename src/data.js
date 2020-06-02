@@ -181,7 +181,7 @@ export const certs = [
     name: 'Interactive Design - Mobile User Experience',
     date: '2020',
     body: `This course further extended my knowledge in creating mobile apps that have an emphasis on the end user having a great experience using it.`,
-    image: img.certs.ID_Mobile,
+    image: img.certs.ID_MobileUX,
     links: [{
       name: "Link",
       url: "https://www.interaction-design.org/nick-wylynko/certificate/course/b7c26498-3d37-4faf-8130-6825dc0ac204"
