@@ -25,10 +25,8 @@ jobs:
       with:
         cmd: install
 
-    - name: Build Website
-      uses: borales/actions-yarn@v2.0.0
-      with:
-        cmd: build
+      - name: Build
+        run: yarn build
 
     - name: Archive Production Artifact
       uses: actions/upload-artifact@master
@@ -36,10 +34,8 @@ jobs:
         name: build
         path: build
 
-    - name: Build StoryBook
-      uses: borales/actions-yarn@v2.0.0
-      with:
-        cmd: build-storybook -o storybook/build
+    - name: Build Storybook
+      run: yarn build-storybook -o storybook/build
 
     - name: Archive StoryBook Artifact
       uses: actions/upload-artifact@master

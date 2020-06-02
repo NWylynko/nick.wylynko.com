@@ -12,16 +12,16 @@ jobs:
 
     steps:
 
-      - uses: actions/checkout@master
+      - name: Checkout Repo
+        uses: actions/checkout@master
 
-      - uses: actions/setup-node@master
+      - name: Install Node
+        uses: actions/setup-node@master
         with:
           node-version: '13.x'
 
-      - uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: install
+      - name: Install Dependencies
+        run: yarn install
 
-      - uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: test
+      - name: Test
+        run: yarn test
