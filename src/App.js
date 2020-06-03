@@ -12,13 +12,13 @@ export default function App() {
 
   useEffect(() => {
     let fetch1 = fetch('https://potato.wylynko.com/stats')
-      .then(res => { res.text().then(JSON.parse).then(stats => setStats(oldState => { return { ...oldState, ...stats }}))}).catch(console.warn)
+      .then(res => { res.text().then(JSON.parse).then(stats => setStats(oldState => { return { ...oldState, ...stats } })) }).catch(console.warn)
     let fetch2 = fetch('https://potato.wylynko.com/c420/stats')
-      .then(res => { res.text().then(JSON.parse).then(stats => setStats(oldState => { return { ...oldState, connect420: stats }}))}).catch(console.warn)
+      .then(res => { res.text().then(JSON.parse).then(stats => setStats(oldState => { return { ...oldState, connect420: stats } })) }).catch(console.warn)
 
     Promise.all([fetch1, fetch2]).finally(() => setLoadingStats(false))
-    
-    }, [setStats, setLoadingStats])
+
+  }, [setStats, setLoadingStats])
 
   useEffect(() => {
     window.onbeforeprint = () => {
@@ -36,7 +36,7 @@ export default function App() {
         <div className="left">
           <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }} >
             <h1 className="title">Nick&nbsp;</h1>
-            <h1 className="title" style={{color: 'var(--main-txt-color)'}}>Wylynko</h1>
+            <h1 className="title" style={{ color: 'var(--main-txt-color)' }}>Wylynko</h1>
           </div>
           <BodyText>Perth, WA, Australia ·&nbsp;<a href="tel:+61434901870" className="phone">0434 901 870</a></BodyText>
           <Link />
@@ -57,21 +57,22 @@ export default function App() {
             <BodyText>Digital Design</BodyText>
           </div>
           <h3>Experiences: </h3>
-            <BodyText>· 4 Week exchange to Virginia, USA to learn at St Christophers from March 24, 2019 to April 22</BodyText>
+          <BodyText>· 4 Week exchange to Virginia, USA to learn at St Christophers from 24th of March, 2019 to 22nd of April</BodyText>
+          <BodyText>· 2 Week school camp 'venture', walking over 200km from 19th of November, 2019 to the 29th</BodyText>
           <h3>Skills: </h3>
-          <ul>
-            <BodyText>
-              HTML, CSS, JS, Python, Nodejs, SQL, NoSQL, Reactjs, React Native (with and without expo),
-              Shell, Docker, GitHub, Photoshop, Blender, Word, Excel,
-              PowerPoint, firebase, gcloud
-            </BodyText>
-          </ul>
+          <Skill title={'Languages:'}>Javascript, Typescript, JSX, CSS</Skill>
+          <Skill title={'Libraries:'}>Reactjs, React Native, Expo, Socketio</Skill>
+          <Skill title={'Tools:'}>Git, Visual Studio Code, Shell, Blender, Photoshop, Illustrator</Skill>
+          <Skill title={'Other:'}>Node.js, Docker, Firebase, GCloud, Redis, Nginx, PWA</Skill>
+          <Skill title={'Methodologies:'}>12 factor app, Agile app development, Test Driven Development</Skill>
+          <Skill title={'Architecture:'}>Rest over http (CRUD), Client-server, Microservices</Skill>
+          <Skill title={'Office:'}>Word, PowerPoint, Excel</Skill>
           <hr />
           <ul>
             <BodyText>· Took apart, put back together and built  Computers</BodyText>
             <BodyText>· Working with Networking, Servers, Websites</BodyText>
             <BodyText>· Extensive knowledge and use of MacOS, Windows 10 and Linux</BodyText>
-            <BodyText>· highly productive in both a team and individual environment</BodyText>
+            <BodyText>· Highly productive in both a team and individual environment</BodyText>
           </ul>
           <h3>Certificates: </h3>
           <div className="certs">
@@ -88,3 +89,11 @@ export default function App() {
   );
 }
 
+function Skill({ title, children }) {
+  return (
+    <div style={{ textAlign: 'left' }}>
+      <h5>{title}</h5>
+      <BodyText>{children}</BodyText>
+    </div>
+  )
+}

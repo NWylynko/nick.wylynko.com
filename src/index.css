@@ -123,9 +123,16 @@ ul {
   padding: 0;
 }
 
-h3 {
+h3, h5 {
   text-align: start; 
   color: var(--main-txt-color);
+  margin-bottom: 5px;
+}
+
+h5 {
+  display: inline-flex;
+  margin: 2px;
+  padding: 2px;
 }
 
 hr {
