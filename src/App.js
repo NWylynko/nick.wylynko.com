@@ -61,7 +61,7 @@ export default function App() {
           <BodyText>· 2 Week school camp 'venture', walking over 200km from 19th of November, 2019 to the 29th</BodyText>
           <h3>Skills: </h3>
           <Skill title={'Languages:'}>Javascript, Typescript, JSX, CSS</Skill>
-          <Skill title={'Libraries:'}>Reactjs, React Native, Expo, Socketio</Skill>
+          <Skill title={'Libraries:'}>Reactjs, React Native, Expo, Expressjs, Socketio</Skill>
           <Skill title={'Tools:'}>Git, Visual Studio Code, Shell, Blender, Photoshop, Illustrator</Skill>
           <Skill title={'Other:'}>Node.js, Docker, Firebase, GCloud, Redis, Nginx, PWA</Skill>
           <Skill title={'Methodologies:'}>12 factor app, Agile app development, Test Driven Development</Skill>
