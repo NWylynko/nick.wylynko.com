@@ -93,7 +93,7 @@ function Skill({ title, children }) {
   return (
     <div style={{ textAlign: 'left' }}>
       <h5>{title}</h5>
-      <BodyText>{children}</BodyText>
+      <BodyText style={{display: 'contents'}}>{children}</BodyText>
     </div>
   )
 }

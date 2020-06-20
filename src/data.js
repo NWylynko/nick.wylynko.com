@@ -22,7 +22,7 @@ export const projects = [{
   subtitle: "Year 11 - School - Computer Science first project",
   title: "Connect 420",
   info: "Web app / PWA - Reactjs, TypeScript, Socketio, Redis, Docker",
-  body: "School Project was to create a simple game, I choose to create a clone of Connect 4, Connect 420 an online multiplayer retro themed version of the game. I taught myself how to use Redis to store the state of the boards and create a game server that can easily be scaled to handle thousands of players simultaneously. I touched up on my docker skills to containerize the server to quickly and easily deploy the server anywhere.",
+  body: "School Project was to create a simple game, I choose to create a clone of Connect 4, Connect 420 an online multiplayer retro themed version of the game. I taught myself how to use Redis to store the state of the boards and create a game server that can easily be scaled to handle thousands of players simultaneously. I touched up on my docker skills to containerize the server to quickly and easily deploy the server anywhere. ",
   image: img.projects.connect420,
   links: [{
     name: "Link,",
@@ -57,7 +57,7 @@ export const projects = [{
   subtitle: "2020 - Myself",
   title: "Fountains",
   info: "IPhone, Android - Expo (React Native), firebase",
-  body: "Public map of water fountains around the world.",
+  body: "Public map of water fountains around the world. ",
   image: img.projects.fountains,
   links: [{
     name: "Link (need expo)",
@@ -70,7 +70,7 @@ export const projects = [{
   subtitle: "2019 - Myself",
   title: "MiniNotes",
   info: "Website - React, firebase",
-  body: "Public pin board for posting notes forever.",
+  body: "Public pin board for posting notes forever. ",
   image: img.projects.mininotes,
   links: [{
     name: "Github,",
@@ -88,7 +88,7 @@ export const projects = [{
   subtitle: "2019 - Myself",
   title: "Small Talk",
   info: "Website, IPhone, Android - Expo (React Native), firebase",
-  body: "Instant Messaging app that works accross all platforms.",
+  body: "Instant Messaging app that works accross all platforms. ",
   image: img.projects.smalltalk,
   links: [{
     name: "Github,",
