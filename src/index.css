@@ -13,15 +13,19 @@ code {
 }
 
 .App {
-  --main-txt-color: #2ec4b6;
+  --accent-color: #1564ad;
+  --text-color: #030301;
+  --background-color: #f8f8ee;
+  --link-color: #5ca9cf;
+
   text-align: center;
   min-height: 99vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #011627;
-  /* color: #fdfffc; */
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 .title {
@@ -85,7 +89,7 @@ code {
 }
 
 .phone {
-  color: #011627;
+  color: var(--text-color);
 }
 
 @media print {
@@ -96,7 +100,7 @@ code {
 
 
   .App {
-    --main-txt-color: #ff8585;
+    --accent-color: #ff8585;
     background: #fff;
     color: black;
     font-size: 19px;
@@ -126,7 +130,7 @@ ul {
 
 h3, h5 {
   text-align: start; 
-  color: var(--main-txt-color);
+  color: var(--accent-color);
   margin-bottom: 5px;
 }
 
@@ -140,8 +144,8 @@ hr {
   height: 1px;
   width: 100%;
   border-width:0 ;
-  color: var(--main-txt-color);
-  background-color: var(--main-txt-color);
+  color: var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 img {

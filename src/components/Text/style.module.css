@@ -1,5 +1,5 @@
 .Link {
-  color: #ff9f1c;
+  color: var(--link-color);
   text-decoration: underline;
 }
 
@@ -30,5 +30,5 @@
 }
 
 .mainTxtColor {
-  color: var(--main-txt-color);
+  color: var(--accent-color);
 }
