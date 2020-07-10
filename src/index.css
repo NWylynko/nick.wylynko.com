@@ -13,14 +13,15 @@ code {
 }
 
 .App {
-  --main-txt-color: #f1c83c;
+  --main-txt-color: #2ec4b6;
   text-align: center;
   min-height: 99vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #011627;
+  /* color: #fdfffc; */
 }
 
 .title {
@@ -84,7 +85,7 @@ code {
 }
 
 .phone {
-  color: white;
+  color: #011627;
 }
 
 @media print {
