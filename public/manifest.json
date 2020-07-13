@@ -3,8 +3,8 @@
     "name": "Nick Wylynko Resume",
     "start_url": ".",
     "display": "standalone",
-    "theme_color": "#f1c83c",
-    "background_color": "#eb7558",
+    "theme_color": "#1564ad",
+    "background_color": "#f8f8ee",
     "icons": [{
             "src": "\/android-icon-36x36.png",
             "sizes": "36x36",
