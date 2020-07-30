@@ -26,8 +26,8 @@ jobs:
     - name: Build
       run: yarn build
 
-    - name: Add Version Page
-      run: yarn addVersionPage
+    - name: test
+      run: yarn ls
 
     - name: Archive Production Artifact
       uses: actions/upload-artifact@master
