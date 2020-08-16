@@ -7,7 +7,7 @@ import Link from './components/Link/';
 
 import { HeaderText, BodyText } from './components/Text/'
 
-import Badge from 'react-clean-badges';
+import Badge from 'react-simple-badges';
 
 export default function App() {
   const { printing, setPrinting, setStats, setLoadingStats } = useContext(StoreContext);
