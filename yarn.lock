@@ -10335,6 +10335,11 @@ react-app-polyfill@^1.0.6:
     regenerator-runtime "^0.13.3"
     whatwg-fetch "^3.0.0"
 
+react-clean-badges@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/react-clean-badges/-/react-clean-badges-1.3.1.tgz#6cc0ed0bb66a4fdd802851a1d312b72ee53109a5"
+  integrity sha512-+WJuN7eWvnRAZE9ZG6ZV53DhNnYGx5YqasMNTmSfzN04rj0En+EvM3C6wPsgs6zQZhX7Jspg0SwOV8Jwy8C//w==
+
 react-clientside-effect@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/react-clientside-effect/-/react-clientside-effect-1.2.2.tgz#6212fb0e07b204e714581dd51992603d1accc837"

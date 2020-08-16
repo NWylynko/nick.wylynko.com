@@ -43,7 +43,7 @@ code {
   /* mobile / tablet */
 
   .title {
-    font-size: 15vmin;
+    font-size: 15vw;
   }
 
   .left {
@@ -63,7 +63,7 @@ code {
   /* desktop */
 
   .title {
-    font-size: 7vmin;
+    font-size: 100px;
   }
 
   .content {
@@ -154,4 +154,12 @@ img {
   margin-right: auto;
   width: 80%;
   max-width: 50vh;
+}
+
+.Skills img {
+  height: 30px;
+  width: auto;
+  display: inline-block;
+  padding: 1px;
+  margin: 1px;
 }

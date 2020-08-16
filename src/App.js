@@ -7,6 +7,8 @@ import Link from './components/Link/';
 
 import { HeaderText, BodyText } from './components/Text/'
 
+import Badge from 'react-clean-badges';
+
 export default function App() {
   const { printing, setPrinting, setStats, setLoadingStats } = useContext(StoreContext);
 
@@ -60,13 +62,41 @@ export default function App() {
           <BodyText>· 4 Week exchange to Virginia, USA to learn at St Christophers from 24th of March, 2019 to 22nd of April</BodyText>
           <BodyText>· 2 Week school camp 'venture', walking over 200km from 19th of November, 2019 to the 29th</BodyText>
           <h3>Skills: </h3>
-          <Skill title={'Languages:'}>Javascript, Typescript, JSX, TSX, CSS</Skill>
-          <Skill title={'Libraries:'}>Reactjs, React Native, Expo, Expressjs, Socketio</Skill>
+          <Skill title={'Languages'}>
+            <Badge name="JavaScript" />
+            <Badge name="TypeScript" />
+            <Badge name="HTML5" />
+            <Badge name="CSS3" />
+            <Badge name="Python" />
+          </Skill>
+          <Skill title={'Frameworks'}>
+            <Badge name="React" />
+            <Badge name="Material-UI" />
+            <Badge name="Expo"/>
+            <Badge name="Socket.io"/>
+          </Skill>
+          <Skill title={'Tools'}>
+            <Badge name="Git" />
+            <Badge name="GitHub" />
+            <Badge name="Visual Studio Code" />
+            <Badge name="Blender" />
+            <Badge name="Adobe Photoshop" />
+            <Badge name="Adobe Illustrator" />
+          </Skill>
+          <Skill title={'Other'}>
+            <Badge name="node.js" />
+            <Badge name="Docker" />
+            <Badge name="Firebase" />
+            <Badge name="Google Cloud" />
+            <Badge name="Redis" />
+            <Badge name="Nginx" />
+          </Skill>
+          {/* <Skill title={'Libraries:'}>Reactjs, React Native, Expo, Expressjs, Socketio</Skill>
           <Skill title={'Tools:'}>Git, Visual Studio Code, Shell, Blender, Photoshop, Illustrator</Skill>
           <Skill title={'Other:'}>Node.js, Docker, Firebase, GCloud, Redis, Nginx, PWA</Skill>
           <Skill title={'Methodologies:'}>12 factor app, Agile app development, Test Driven Development</Skill>
           <Skill title={'Architecture:'}>Rest over http (CRUD), Client-server, Microservices</Skill>
-          <Skill title={'Office:'}>Word, PowerPoint, Excel</Skill>
+          <Skill title={'Office:'}>Word, PowerPoint, Excel</Skill> */}
           <hr />
           <ul>
             <BodyText>· Took apart, put back together and built  Computers</BodyText>
@@ -91,9 +121,11 @@ export default function App() {
 
 function Skill({ title, children }) {
   return (
-    <div style={{ textAlign: 'left' }}>
+    <div style={{ textAlign: 'left' }} className="Skills">
       <h5>{title}</h5>
-      <BodyText style={{display: 'contents'}}>{children}</BodyText>
+      <div>
+        {children}
+      </div>
     </div>
   )
 }
