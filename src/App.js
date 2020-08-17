@@ -71,9 +71,10 @@ export default function App() {
           </Skill>
           <Skill title={'Frameworks'}>
             <Badge name="React" />
-            <Badge name="Material-UI" />
             <Badge name="Expo"/>
             <Badge name="Socket.io"/>
+            <Badge name="Material-UI" />
+            <Badge name="styled-components" />
           </Skill>
           <Skill title={'Tools'}>
             <Badge name="Git" />
