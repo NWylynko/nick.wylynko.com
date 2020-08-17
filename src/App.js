@@ -69,15 +69,15 @@ export default function App() {
             <Badge name="CSS3" />
             <Badge name="Python" />
           </Skill>
-          <Skill title={'Frameworks'}>
+          <Skill title={'Libraries'}>
             <Badge name="React" />
+            <Badge name="React Router" />
             <Badge name="Expo"/>
             <Badge name="Socket.io"/>
             <Badge name="Material-UI" />
             <Badge name="styled-components" />
           </Skill>
           <Skill title={'Tools'}>
-            <Badge name="Git" />
             <Badge name="GitHub" />
             <Badge name="Visual Studio Code" />
             <Badge name="Blender" />
@@ -85,19 +85,21 @@ export default function App() {
             <Badge name="Adobe Illustrator" />
           </Skill>
           <Skill title={'Other'}>
-            <Badge name="node.js" />
+            <Badge name="Node.js" />
+             Badge name="NPM" />
             <Badge name="Docker" />
             <Badge name="Firebase" />
             <Badge name="Google Cloud" />
             <Badge name="Redis" />
-            <Badge name="Nginx" />
+            <Badge name="NGINX" />
+            <Badge name="Vultr" />
           </Skill>
-          {/* <Skill title={'Libraries:'}>Reactjs, React Native, Expo, Expressjs, Socketio</Skill>
-          <Skill title={'Tools:'}>Git, Visual Studio Code, Shell, Blender, Photoshop, Illustrator</Skill>
-          <Skill title={'Other:'}>Node.js, Docker, Firebase, GCloud, Redis, Nginx, PWA</Skill>
-          <Skill title={'Methodologies:'}>12 factor app, Agile app development, Test Driven Development</Skill>
-          <Skill title={'Architecture:'}>Rest over http (CRUD), Client-server, Microservices</Skill>
-          <Skill title={'Office:'}>Word, PowerPoint, Excel</Skill> */}
+          <Skill title={'Office:'}>
+            <Badge name="Microsoft Word" />
+            <Badge name="Microsoft PowerPoint" />
+            <Badge name="Microsoft Excel" />
+            <Badge name="Microsoft OneNote" />
+          </Skill>
           <hr />
           <ul>
             <BodyText>· Took apart, put back together and built  Computers</BodyText>
