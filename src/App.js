@@ -48,15 +48,16 @@ export default function App() {
           </HeaderText>
           <h3>Education: </h3>
           <BodyText>
-            Day boy at Christ Church Grammar School since year 4,
-            currently in year {12 - (2021 - new Date().getFullYear())} (Queenslea), graduate in 2021 cohort.
+            Christ Church Grammar School, 2013 to 2021 (Queenslea)
           </BodyText>
-          <h3>Year 11 Atar selection:</h3>
+          <h3>Subject:</h3>
           <div style={{ justifyContent: 'space-around' }}>
-            <BodyText>English</BodyText><BodyText>·</BodyText>
-            <BodyText>Mathematics Applications</BodyText><BodyText>·</BodyText>
             <BodyText>Computer Science</BodyText><BodyText>·</BodyText>
-            <BodyText>Digital Design</BodyText>
+            <BodyText>Digital Design</BodyText><BodyText>·</BodyText>
+            <BodyText>Maths Applications</BodyText><BodyText>·</BodyText>
+            <BodyText>Business & Enterprise</BodyText><BodyText>·</BodyText>
+<BodyText>English</BodyText><BodyText>·</BodyText>
+<BodyText>Materials & Design Technology</BodyText>
           </div>
           <h3>Experiences: </h3>
           <BodyText>· 4 Week exchange to Virginia, USA to learn at St Christophers from 24th of March, 2019 to 22nd of April</BodyText>
@@ -92,7 +93,6 @@ export default function App() {
             <Badge name="Google Cloud" />
             <Badge name="Redis" />
             <Badge name="NGINX" />
-            <Badge name="Vultr" />
           </Skill>
           <Skill title={'Office:'}>
             <Badge name="Microsoft Word" />
