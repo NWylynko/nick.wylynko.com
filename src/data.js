@@ -18,6 +18,17 @@ export function stater(name, info) {
 }
 
 export const projects = [{
+  id: 12,
+  subtitle: "2020 - For Client",
+  title: "share Your Story",
+  info: "website - Reactjs, TypeScript, Firebase",
+  body: "Client share Your Story needed a website to have an online presence to get customers and display work that has been done. Using modern web technologies I built two websites, the main website is used to sell the business and gain customers, the second page is a admin panel to manage firestore for the text and firebase storage for images. This means the website is entirely dynamic and can easily be updated in real time.",
+  image: img.projects.yourStory,
+  links: [{
+    name: "Link",
+    url: "https://yourstory.family/"
+  }]
+},{
   id: 11,
   subtitle: "Year 11 - School - Computer Science first project",
   title: "Connect 420",

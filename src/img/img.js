@@ -9,6 +9,7 @@ import mininotes from "./projects/mininotes.png";
 import fountains from "./projects/fountains.png";
 import realworld from "./projects/realworld.png";
 import connect420 from './projects/connect420.png';
+import yourStory from './projects/yourStory.png'
 
 import SAEDesign from "./certs/SAE-design.png";
 import ID_HCI from "./certs/interactive-design-HCI.jpg";
@@ -25,7 +26,8 @@ export const projects = {
   mininotes,
   fountains,
   realworld,
-  connect420
+  connect420,
+  yourStory
 }
 
 export const certs = {
