@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "nick-wylynko",
+    "site": "nick-wylynko-aadfc",
     "public": "build",
     "ignore": [
       "firebase.json",
@@ -10,14 +10,15 @@
       "src/**",
       "package-lock.json",
       "package.json",
-      "README.md"
+      "README.md",
+      "storybook/**",
+      ".nvmrc"
     ],
     "rewrites": [
       {
         "source": "**",
         "destination": "/index.html"
       }
-
     ]
   }
 }
