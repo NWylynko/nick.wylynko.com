@@ -5,14 +5,14 @@ import "firebase/performance"
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyAyScInXe0Dj5LLJg6XN7JjE3LwsQnIvUU",
-  authDomain: "wylynko-com.firebaseapp.com",
-  databaseURL: "https://wylynko-com.firebaseio.com",
-  projectId: "wylynko-com",
-  storageBucket: "wylynko-com.appspot.com",
-  messagingSenderId: "572048073800",
-  appId: "1:572048073800:web:5681d1f96042ceac6e647d",
-  measurementId: "G-42MLYP4551"
+  apiKey: "AIzaSyA2uiJp4yyGkWhWAJWBM5gJnrFYZVvriWA",
+  authDomain: "wylynko-208cd.firebaseapp.com",
+  databaseURL: "https://wylynko-208cd.firebaseio.com",
+  projectId: "wylynko-208cd",
+  storageBucket: "wylynko-208cd.appspot.com",
+  messagingSenderId: "738874034279",
+  appId: "1:738874034279:web:768bb33fdcbfac19e46cc2",
+  measurementId: "G-CZGVC2G2LK"
 };
 
 firebase.initializeApp(firebaseConfig);
