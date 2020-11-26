@@ -1,0 +1,18 @@
+export default {
+  red: '#f26c4f',
+  redOrange: '#f68e56',
+  yellowOrange: '#fbaf5d',
+  yellow: '#fff568',
+  peaGreen: '#acd373',
+  yellowGreen: '#7cc576',
+  green: '#3cb878',
+  greenCyan: '#1cbbb4',
+  cyan: '#00bff3',
+  cyanBlue: '#448ccb',
+  blue: '#5674b9',
+  blueViolet: '#605ca8',
+  violet: '#8560a8',
+  violetMagenta: '#a864a8',
+  magenta: '#f06eaa',
+  megentaRed: '#f26d7d',
+}
