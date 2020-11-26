@@ -4,17 +4,25 @@ import { Circle } from "./shapes/Circle";
 import { Rectangle } from "./shapes/Rectangle";
 import { Triangle } from "./shapes/Triangle";
 import colours from './colours'
+import { useWindowSize } from '../../hooks/useWindowSize';
 
 export function Background() {
+
+  const { width } = useWindowSize();
+
+  if (!width) {
+    return null
+  }
+
   return (
     <Container>
-      <Triangle colour={colours.yellowOrange} size={250} x={-20} y={100} />
+      <Triangle colour={colours.yellowOrange} size={250} x={width * 0.2 - 400} y={100} />
 
-      <Circle colour={colours.blue} radius={200} x={750} y={-200} />
-      <Rectangle colour={colours.cyanBlue} height={350} width={300} radius={10} x={650} y={100} />
+      <Circle colour={colours.blue} radius={200} x={width * 0.1 + 500} y={-200} />
+      <Rectangle colour={colours.cyanBlue} height={350} width={300} radius={10} x={width * 1.2 - 1400} y={100} />
 
-      <Rectangle colour={colours.blue} height={250} width={350} radius={10} x={1300} y={300} />
-      <Triangle colour={colours.peaGreen} size={125} x={1500} y={200} />
+      <Rectangle colour={colours.blue} height={250} width={350} radius={10} x={width * 1.02 - 500} y={300} />
+      <Triangle colour={colours.peaGreen} size={125} x={width * 1.4 - 1000} y={200} />
 
       <Circle colour={colours.cyanBlue} radius={150} x={-80} y={700} />
       <Triangle colour={colours.yellow} size={250} x={-150} y={850} />
