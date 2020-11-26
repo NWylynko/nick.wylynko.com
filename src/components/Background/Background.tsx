@@ -50,7 +50,7 @@ export function Background() {
 }
 
 const Container = styled.svg`
-  height: 250vh;
+  min-height: 3350px;
   width: 100%;
   position: absolute;
 `;
