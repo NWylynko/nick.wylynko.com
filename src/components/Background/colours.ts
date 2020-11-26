@@ -14,5 +14,5 @@ export default {
   violet: '#8560a8',
   violetMagenta: '#a864a8',
   magenta: '#f06eaa',
-  megentaRed: '#f26d7d',
+  magentaRed: '#f26d7d',
 }
