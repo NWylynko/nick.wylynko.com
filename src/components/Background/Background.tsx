@@ -20,6 +20,5 @@ export function Background() {
 const Container = styled.svg`
   height: 200vh;
   width: 100%;
-  background-color: #111111;
   position: absolute;
 `;
