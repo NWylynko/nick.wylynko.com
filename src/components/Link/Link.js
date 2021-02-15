@@ -8,14 +8,14 @@ export function Link() {
   if (printing) {
     return (<div>
       <BodyText>Website [nick.wylynko.com]</BodyText>
-      <BodyText>Email [nick1014375@gmail.com]</BodyText>
+      <BodyText>Email [nick@wylynko.com]</BodyText>
       <BodyText>LinkedIn [nick.wylynko.com/linkedin]</BodyText>
       <BodyText>Github [nick.wylynko.com/github]</BodyText>
     </div>);
   }
   else {
     return (<div style={{ justifyContent: 'center' }}>
-      <BodyA href="mailto:nick1014375@gmail.com">Email</BodyA>
+      <BodyA href="mailto:nick@wylynko.com">Email</BodyA>
       <BodyText> · </BodyText>
       <BodyA href="https://linkedin.com/in/nick-wylynko-17a202193/">LinkedIn</BodyA>
       <BodyText> · </BodyText>
