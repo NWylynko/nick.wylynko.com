@@ -11157,10 +11157,10 @@ react-scripts@^3.4.0:
   optionalDependencies:
     fsevents "2.1.2"
 
-react-simple-badges@^1.3.3:
-  version "1.3.3"
-  resolved "https://registry.yarnpkg.com/react-simple-badges/-/react-simple-badges-1.3.3.tgz#5e93a08ac30349fdadceeed525e49e024e56185e"
-  integrity sha512-WZRwf9X9H3+WuiUalVD6ImbSidhpAQ0G5DhZcMsGHGX1zWm+C9CPhir87SOOvJd6y4ObUAlfnIFKx/5QbaQsTw==
+react-simple-badges@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/react-simple-badges/-/react-simple-badges-2.0.1.tgz#0ca5ff69463d64868bdfa379e28863d25654f47e"
+  integrity sha512-CLGiH8npjcod6vMonJ1Ra36dcED/iFKjJRJUz5OwkklJRRN+G30rdYqktLiU3FBMYRp5mMNWXsPVRJ+YXQSk4Q==
 
 react-sizeme@^2.6.7:
   version "2.6.12"
