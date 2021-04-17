@@ -87,7 +87,7 @@ export default function App() {
           </Skill>
           <Skill title={'Other'}>
             <Badge name="Node.js" />
-            <Badge name="NPM" />
+            <Badge name="npm" />
             <Badge name="Docker" />
             <Badge name="Firebase" />
             <Badge name="Google Cloud" />
