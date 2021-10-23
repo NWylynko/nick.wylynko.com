@@ -18,6 +18,17 @@ export function stater(name, info) {
 }
 
 export const projects = [{
+  id: 13,
+  subtitle: "2020 - For Client",
+  title: "Adventure Sailing",
+  info: "website - Gatsbyjs, Reactjs, TypeScript, Firebase",
+  body: "Client had built a site using wix, while it was functional, it was slow, had inconsistent styling and had broken pages. using inspiration from the businesses new logo and theme, I designed a new website before building it in gatsby. I picked gatsby as it has blazing fast loading times and its a perfect fit as the website doesn't have any content that needs to be loaded on request / page load. Since deploying the website, it has been looked at by over a thousand people, and gotten the client hundreds of leads.",
+  image: img.projects.adventureSailing,
+  links: [{
+    name: "Link",
+    url: "https://adventuresailing.com.au/"
+  }]
+},{
   id: 12,
   subtitle: "2020 - For Client",
   title: "share Your Story",
@@ -36,20 +47,11 @@ export const projects = [{
   body: "School Project was to create a simple game, I choose to create a clone of Connect 4, Connect 420 an online multiplayer retro themed version of the game. I taught myself how to use Redis to store the state of the boards and create a game server that can easily be scaled to handle thousands of players simultaneously. I touched up on my docker skills to containerize the server to quickly and easily deploy the server anywhere. ",
   image: img.projects.connect420,
   links: [{
-    name: "Link,",
-    url: "https://connect420.web.app/"
-  },{
     name: "Github - Client,",
     url: "https://github.com/NWylynko/connect420/"
   }, {
     name: "Github - Server,",
     url: "https://github.com/NWylynko/connect420-server/"
-  }, {
-    name: "Docker - Client,",
-    url: "https://hub.docker.com/r/nwylynko/connect420/"
-  }, {
-    name: "Docker - Server,",
-    url: "https://hub.docker.com/r/nwylynko/connect420-server/"
   }],
   stat: 'connect420'
 },{

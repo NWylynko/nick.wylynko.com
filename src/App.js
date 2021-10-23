@@ -55,11 +55,11 @@ export default function App() {
             <BodyText>Computer Science</BodyText><BodyText>·</BodyText>
             <BodyText>Digital Design</BodyText><BodyText>·</BodyText>
             <BodyText>Maths Applications</BodyText><BodyText>·</BodyText>
-            <BodyText>Business & Enterprise</BodyText><BodyText>·</BodyText>
-<BodyText>English</BodyText><BodyText>·</BodyText>
-<BodyText>Materials & Design Technology</BodyText>
+            <BodyText>Business Management & Enterprise</BodyText><BodyText>·</BodyText>
+            <BodyText>English</BodyText>
           </div>
           <h3>Experiences: </h3>
+          <BodyText>· Year long, part time internship at BlueSky Digital Labs, working on building web applications with React and Node</BodyText>
           <BodyText>· 4 Week exchange to Virginia, USA to learn at St Christophers from 24th of March, 2019 to 22nd of April</BodyText>
           <BodyText>· 2 Week school camp 'venture', walking over 200km from 19th of November, 2019 to the 29th</BodyText>
           <h3>Skills: </h3>
@@ -94,15 +94,9 @@ export default function App() {
             <Badge name="Redis" />
             <Badge name="NGINX" />
           </Skill>
-          <Skill title={'Office:'}>
-            <Badge name="Microsoft Word" />
-            <Badge name="Microsoft PowerPoint" />
-            <Badge name="Microsoft Excel" />
-            <Badge name="Microsoft OneNote" />
-          </Skill>
           <hr />
           <ul>
-            <BodyText>· Took apart, put back together and built  Computers</BodyText>
+            <BodyText>· Took apart, put back together and built Computers</BodyText>
             <BodyText>· Working with Networking, Servers, Websites</BodyText>
             <BodyText>· Extensive knowledge and use of MacOS, Windows 10 and Linux</BodyText>
             <BodyText>· Highly productive in both a team and individual environment</BodyText>

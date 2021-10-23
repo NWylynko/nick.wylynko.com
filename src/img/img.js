@@ -10,6 +10,7 @@ import fountains from "./projects/fountains.png";
 import realworld from "./projects/realworld.png";
 import connect420 from './projects/connect420.png';
 import yourStory from './projects/yourStory.png'
+import adventureSailing from "./projects/adventuresailing.PNG"
 
 import SAEDesign from "./certs/SAE-design.png";
 import ID_HCI from "./certs/interactive-design-HCI.jpg";
@@ -27,7 +28,8 @@ export const projects = {
   fountains,
   realworld,
   connect420,
-  yourStory
+  yourStory,
+  adventureSailing
 }
 
 export const certs = {
