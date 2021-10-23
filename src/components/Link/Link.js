@@ -17,7 +17,7 @@ export function Link() {
     return (<div style={{ justifyContent: 'center' }}>
       <BodyA href="mailto:nick@wylynko.com">Email</BodyA>
       <BodyText> · </BodyText>
-      <BodyA href="https://linkedin.com/in/nick-wylynko-17a202193/">LinkedIn</BodyA>
+      <BodyA href="https://linkedin.com/in/nick-wylynko/">LinkedIn</BodyA>
       <BodyText> · </BodyText>
       <BodyA href="https://github.com/nwylynko">Github</BodyA>
     </div>);
