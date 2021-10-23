@@ -9,7 +9,7 @@ import StoreProvider from './store';
 const page = window.location.href
 const redirects = [
   { from: '/github', to: 'https://github.com/nwylynko' },
-  { from: '/linkedin', to: 'https://linkedin.com/in/nick-wylynko-17a202193/' }
+  { from: '/linkedin', to: 'https://linkedin.com/in/nick-wylynko/' }
 ]
 
 redirects.forEach((redirect) => {
